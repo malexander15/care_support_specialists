@@ -1,0 +1,216 @@
+/* HTML Defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #1f2937;
+  background-color: #f8fafc;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #1f2937;
+}
+
+/* End HTML Defaults */
+
+/* Navigation */
+
+.navbar {
+  background-color: #e3f2fd;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.brand-logo {
+  height: auto;
+  width: 200px;
+  margin-top: 0.5rem;
+}
+
+/* End Nav */
+
+.logo {
+  height: auto;
+  width: 200px;
+  margin-top: 0.5rem;
+  mix-blend-mode: multiply;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* .container {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+} */
+
+section {
+  padding: 1rem 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #0f172a;
+}
+
+p {
+  margin-bottom: 1rem;
+  max-width: 65ch;
+}
+
+.hero {
+  background: linear-gradient(to bottom, #eff6ff, #ffffff);
+  padding: 5rem 0;
+  background-image: url('../images/medicalStockSeries/1.png');
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  max-width: 14ch;
+  padding-top: 0.5rem;
+}
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  background-color: #1f2937;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  padding: 1rem;
+  opacity: 0.9;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+footer {
+  background: #636a78;
+  color: #ffffff;
+  padding: 3rem 0;
+  margin-top: 3rem;
+  border-top: #1f2937 solid 1px;
+}
+
+footer h3 {
+  color: #0f172a;
+  margin-bottom: 1rem;
+}
+
+footer p {
+  color: #ffffff;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #2563eb;
+}
+
+/* Home Page Overrides */
+
+/* End Home Page Overrides */
+
+/* About Page Overrides */
+
+.about {
+  background-image: url('../images/medicalStockSeries/2.png');
+  background-position: center;
+  background-size: cover;
+  padding: 5rem 0;
+  display: grid;
+  justify-content: center;
+  backdrop-filter: blur(20px);
+  margin-bottom: 2rem;
+}
+
+.banner p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 1rem;
+  background-color: rgba(3, 8, 56, 0.2);
+  border-radius: 1em 1em 7rem 1em;
+  backdrop-filter: blur(100px);
+  color: #000000;
+}
+
+/* End About Page overrides */
+
+/* Services Page Overrides */
+.services-banner {
+  background-image: url('../images/medicalStockSeries/3.png');
+  background-position: center;
+  background-size: cover;
+  padding: 17rem 0;
+  display: grid;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.card-body ul{
+  list-style-type: none;
+  padding-left: 0;
+  font-weight: 600;
+}
+
+.card-body h2, h3{
+  text-decoration: underline;
+}
+
+.card-text{
+  max-width: none;
+}
+
+/* End Services Page Overrides */
