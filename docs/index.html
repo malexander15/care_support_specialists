@@ -14,49 +14,32 @@
     <nav class="navbar navbar-expand-lg custom-navbar border-bottom border-body">
       <div class="container-fluid d-flex justify-content-between align-items-center">
 
-        <!-- Bootstrap Collapse Button -->
-        <button
-          class="navbar-toggler order-lg-1"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNav"
-          aria-controls="mainNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- End Bootstrap Collapse Button -->
+        <div class="order-1">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <!-- Brand Logo -->
-        <div>
-          <a class="navbar-brand mx-lg-auto" href="index.html">
-            <img
-              src="assets/images/logo/careSupportSpecialistWordmarkLogo.png"
-              alt="Care Support Specialists LLC Logo"
-              class="brand-logo"
-            >
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="order-2">
+          <a class="navbar-brand mx-0" href="index.html">
+            <img src="assets/images/logo/careSupportSpecialistWordmarkLogo.png" alt="Logo" class="brand-logo">
           </a>
         </div>
-        <!-- End Brand Logo -->
-         
-         <!-- Call Button -->
-        <div>
-          <a href="tel:15612954042" class="">
+
+        <div class="order-3">
+          <a href="tel:15612954042" class="nav-link">
             <i class="bi bi-telephone-fill" title="Call Now"></i>
           </a>
         </div>
-        <!-- End Call Button -->
 
-         <!-- Nav Links -->
-        <div class="collapse navbar-collapse " id="mainNav">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          </ul>
-        </div>
-        <!-- End Nav Links -->
       </div>
     </nav>
   </header>
