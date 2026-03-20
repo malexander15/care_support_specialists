@@ -170,13 +170,20 @@ footer a:hover {
 
 /* Services Page Overrides */
 .services-banner {
-  background-image: url('../images/medicalStockSeries/3.png');
   background-position: center;
   background-size: cover;
-  padding: 17rem 0;
   display: grid;
   justify-content: center;
   margin-bottom: 2rem;
+}
+
+#myTab .nav-link{
+  color: #000000
+}
+
+#myTab .nav-link.active{
+  color: #ffffff;
+  background-color: #0f172a;
 }
 
 .card-body ul{
@@ -186,11 +193,23 @@ footer a:hover {
 }
 
 .card-body h2, h3{
+  color: #0f172a;
   text-decoration: underline;
 }
 
 .card-text{
   max-width: none;
+}
+
+.concierge-services-idea-for-list li{
+  text-decoration: underline;
+}
+
+.list-unstyled li::before {
+  content: "✓";
+  color: #2563eb;
+  margin-right: 0.5rem;
+  justify-content: left;
 }
 
 /* End Services Page Overrides */
