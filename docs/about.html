@@ -10,9 +10,9 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <nav class="navbar navbar-expand-lg custom-navbar border-bottom border-body">
-      <div class="container-fluid d-flex justify-content-between align-items-center">
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg custom-navbar border-bottom border-body ">
+      <div class="container-fluid d-flex justify-content-between      align-items-center">
         <div class="order-1">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
             <span class="navbar-toggler-icon"></span>
@@ -34,42 +34,50 @@
         </div>
 
         <div class="order-3">
-          <a href="tel:15612954042" class="nav-link">
-            <i class="bi bi-telephone-fill" title="Call Now"></i>
-          </a>
+          <div class="nav-phone-icon">
+            <a href="tel:15612954042" class="nav-link">
+              <i class="bi bi-telephone-fill" title="Call Now"></i>
+            </a>
+          </div>
+          <div class="nav-mail-icon">
+            <a href="mailto:info@caresupportspecialists.com" class="nav-link">
+              <i class="bi bi-envelope-fill" title="Email Us"></i>
+            </a>
+          </div>
         </div>
-
       </div>
     </nav>
   </header>
 
-  <section class="about">
-    <div class="container">
+  <section class="">
+    <div class="d-flex flex-column align-items-end justify-content-center text-end about">
       <div class="banner">
-        <h1>About Care Support Specialists LLC</h1>
-        <p>
+        <h1 class="">About Care Support Specialists LLC</h1>
+        <h4 class="ms-auto mr-1">
           Care Support Specialists LLC was founded to help families navigate the healthcare system during times of transition.        
-        </p>
+        </h4>
       </div>
     </div>
   </section>
-  <div class="container text-center">
+  <div class="container">
     <div class="row">
       <div class="col-xxl-12 col-xl-12 col-md-12 col-sm-12 col-12 mb-4">
         <div class="card">
           <div class="card-body">
             <h1 class="card-title">Our Mission</h1>
-            <p class="card-text px-lg-5 px-md-5">
-              Many families face difficult decisions when a loved one is discharged from a hospital or rehabilitation facility or when long-term care planning becomes necessary.
-            </p>
-            <p class="card-text px-lg-5 px-md-5">
-              With experience in hospital discharge planning and care coordination, Care Support Specialists LLC provides guidance and support so families can better understand their options and make informed decisions regarding their loved one’s care.
-            </p>
-            <p class="card-text px-lg-5 px-md-5">
-              Our goal is to simplify the process, provide clarity, and help families coordinate the services needed for their loved ones.
-            </p>
+            <div class="mission-statement ms-2 mb-4">
+              <h5 class="card-text">
+                Many families face difficult decisions when a loved one is discharged from a hospital or rehabilitation facility or when long-term care planning becomes necessary.
+              </h5>
+              <h5 class="card-text">
+                With experience in hospital discharge planning and care coordination, Care Support Specialists LLC provides guidance and support so families can better understand their options and make informed decisions regarding their loved one’s care.
+              </h5>
+              <h5 class="card-text">
+                Our goal is to simplify the process, provide clarity, and help families coordinate the services needed for their loved ones.
+              </h5>
+            </div>
             <h3>Why Families Choose Us</h3>
-            <ul>
+            <ul class="list-unstyled">
               <li>Compassionate, family-centered guidance</li>
               <li>Experience with care coordination and discharge planning</li>
               <li>Support understanding Medicare and Medicaid-related processes</li>
@@ -78,22 +86,25 @@
           </div>
         </div>
       </div>
+      
       <div class="col-xxl-12 col-xl-12 col-md-12 col-sm-12 col-12 mb-4">
         <div class="card">
           <div class="card-body">
             <h1 class="card-title">Have Questions About the Next Step in Care?</h1>
-            <p class="card-text px-lg-5 px-md-5">
+            <h4 class="card-text px-lg-5 px-md-5 mb-4 mt-4">
               We are here to help families better understand their options and coordinate the support their loved ones need.
-            </p>
-            <h3>Call or Email to Schedule a Consultation</h3>
-            <a href="tel:15612954042" class="btn btn-primary">
-              <i class="bi bi-telephone-fill"></i>
-              Call Now
-            </a>
-            <a href="mailto:info@caresupportspecialists.com" class="btn btn-secondary">
-              <i class="bi bi-envelope-fill"></i>
-              Email Us
-            </a>
+            </h4>
+            <div class="text-center">
+              <h3>Call or Email to Schedule a Consultation</h3>
+              <a href="tel:15612954042" class="btn btn-primary mb-1">
+                <i class="bi bi-telephone-fill"></i>
+                Call Now
+              </a>
+              <a href="mailto:info@caresupportspecialists.com" class="btn btn-secondary mb-1">
+                <i class="bi bi-envelope-fill"></i>
+                Email Us
+              </a>
+            </div>
           </div>
         </div>
       </div>

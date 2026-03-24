@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <nav class="navbar navbar-expand-lg custom-navbar border-bottom border-body">
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg custom-navbar border-bottom border-body ">
       <div class="container-fluid d-flex justify-content-between align-items-center">
 
         <div class="order-1">
@@ -35,17 +35,23 @@
         </div>
 
         <div class="order-3">
-          <a href="tel:15612954042" class="nav-link">
-            <i class="bi bi-telephone-fill" title="Call Now"></i>
-          </a>
+          <div class="nav-phone-icon">
+            <a href="tel:15612954042" class="nav-link">
+              <i class="bi bi-telephone-fill" title="Call Now"></i>
+            </a>
+          </div>
+          <div class="nav-mail-icon">
+            <a href="mailto:info@caresupportspecialists.com" class="nav-link">
+              <i class="bi bi-envelope-fill" title="Email Us"></i>
+            </a>
+          </div>
         </div>
-
       </div>
     </nav>
   </header>
 
   <section class="hero">
-    <div class="container">
+    <div class="container d-flex flex-column align-items-end justify-content-center text-end">
       <h1 class="hero-header">Compassionate Guidance for Families Navigating Healthcare Transitions</h1>
       <p>
         Care Support Specialists LLC provides compassionate care coordination and
@@ -53,22 +59,21 @@
         discharge planning, Medicare benefit navigation, Medicaid long-term care
         applications, and transitions to assisted living or other care settings.
       </p>
-      <div class="hero-actions">
-        <a href="tel:15612954042" class="btn btn-primary">Call to Schedule a Consultation</a>
-        <a href="services.html" class="btn btn-secondary">View Services</a>
-      </div>
+        <a href="tel:15612954042" class="btn btn-primary mb-1">Call to Schedule a Consultation</a>
+        <a href="services.html" class="btn btn-secondary mb-1">View Services</a>
     </div>
   </section>
-  <div class="container text-center">
+
+  <div class="container">
     <div class="row">
       <div class="col-xxl-12 col-xl-12 col-md-12 col-sm-12 col-12 mb-4">
         <div class="card">
           <div class="card-body">
             <h2 class="card-title">Who We Help</h2>
-            <p class="card-text px-lg-5 px-md-5">
-              We work with families, caregivers, and individuals who need support navigating healthcare transitions and long-term care planning.
-            </p>
-            <ul>
+            <h4 class="card-text px-lg-5 px-md-5 mb-4 mt-4">
+              "We work with families, caregivers, and individuals who need support navigating healthcare transitions and long-term care planning."
+            </h4>
+            <ul class="list-unstyled">
               <li>Families planning the next level of care after a hospital or rehabilitation stay</li>
               <li>Seniors and caregivers exploring assisted living, home care, or other long-term care options</li>
               <li>Families preparing for Medicaid long-term care applications</li>

@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <nav class="navbar navbar-expand-lg custom-navbar border-bottom border-body">
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg custom-navbar border-bottom border-body ">
       <div class="container-fluid d-flex justify-content-between align-items-center">
         <div class="order-1">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
@@ -30,7 +30,7 @@
         <!-- 2. Brand Logo -->
         <!-- order-2 keeps it in the middle -->
         <div class="order-2">
-          <a class="navbar-brand mx-0" href="index.html">
+          <a href="index.html">
             <img src="assets/images/logo/careSupportSpecialistWordmarkLogo.png" alt="Logo" class="brand-logo">
           </a>
         </div>
@@ -38,9 +38,16 @@
         <!-- 3. Call Button -->
         <!-- order-3 keeps it at the end -->
         <div class="order-3">
-          <a href="tel:15612954042" class="nav-link">
-            <i class="bi bi-telephone-fill" title="Call Now"></i>
-          </a>
+          <div class="nav-phone-icon">
+            <a href="tel:15612954042" class="nav-link">
+              <i class="bi bi-telephone-fill" title="Call Now"></i>
+            </a>
+          </div>
+          <div class="nav-mail-icon">
+            <a href="mailto:info@caresupportspecialists.com" class="nav-link">
+              <i class="bi bi-envelope-fill" title="Email Us"></i>
+            </a>
+          </div>
         </div>
 
       </div>
@@ -48,139 +55,156 @@
   </header>
 
   <div class="services-banner">
-    <img src="assets/images/medicalStockSeries/3.png" alt="Services Banner" class="services-banner-image">
+    <img src="assets/images/medicalStockSeries/3.png" alt="Responsive banner" class="w-100">
   </div>
 
-  <div class="container text-center">
-  <h1>Our Services</h1>
-  <!-- Row -->
-    <div class="row">
-      <!-- Column Single Column for a viewports -->
-      <div class="col-xxl-12 col-xl-12 col-md-12 col-sm-12 col-12 mb-4">
-        <!-- Bootstrap Tabs -->
-        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="medicare-tab" data-bs-toggle="tab" data-bs-target="#medicare" type="button" role="tab">Medicare</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="medicaid-tab" data-bs-toggle="tab" data-bs-target="#medicaid" type="button" role="tab">Medicaid</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="concierge-tab" data-bs-toggle="tab" data-bs-target="#concierge" type="button" role="tab">Concierge Care</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="senior-tab" data-bs-toggle="tab" data-bs-target="#senior" type="button" role="tab">Senior Care</button>
-          </li>
-        </ul>
+  <div class="container">
+    <h1>Our Services</h1>
+    <!-- Bootstrap Tabs -->
+    <ul class="nav nav-tabs justify-content-center mb-4" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="medicare-tab" data-bs-toggle="tab" data-bs-target="#medicare" type="button" role="tab">Medicare</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="medicaid-tab" data-bs-toggle="tab" data-bs-target="#medicaid" type="button" role="tab">Medicaid</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="concierge-tab" data-bs-toggle="tab" data-bs-target="#concierge" type="button" role="tab">Concierge Care</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="senior-tab" data-bs-toggle="tab" data-bs-target="#senior" type="button" role="tab">Senior Care</button>
+      </li>
+    </ul>
         <!-- End Bootstrap Tabs -->
 
         <!-- Tab Content -->
-        <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="medicare" role="tabpanel" aria-labelledby="medicare-tab">
-            <div class="row justify-content-center">
-              <div class="col-lg-10 col-xl-8">
-                <div class="card shadow-sm">
-                  <div class="card-body">
-                    <h2 class="card-title">Medicare Benefit Navigation</h2>
-                    <p class="card-text px-md-5">
-                      Understanding Medicare coverage during transitions of care can be challenging, especially when determining what services are available after hospitalization or rehabilitation.
-                    </p>
-                    <h5>
-                      We help families better understand how Medicare applies to their situation so they can make informed decisions.
-                    </h5>
-                    <h3>Services may include:</h3>
-                    <ul class="list-unstyled">
-                      <li>Explanation of Medicare-covered services</li>
-                      <li>Guidance on skilled nursing and rehabilitation coverage</li>
-                      <li>Understanding home health eligibility</li>
-                      <li>Clarification of timelines and limitations</li>
-                      <li>General education to help families make informed care decisions</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="medicaid" role="tabpanel" aria-labelledby="medicaid-tab">
-            <div class="row justify-content-center">
-              <div class="col-lg-10 col-xl-8">
-                <div class="card shadow-sm">
-                  <div class="card-body">
-                    <h2 class="card-title">Medicaid Long-Term Care Application Support</h2>
-                    <p class="card-text px-md-5">
-                      Applying for Medicaid long-term care involves <strong>strict</strong> documentation requirements and eligibility guidelines. Many families feel overwhelmed by the process.
-                    </p>
-                    <h3>Support may include:</h3>
-                    <ul class="list-unstyled">
-                      <li>Preliminary eligibility discussion</li>
-                      <li>Explanation of income and asset considerations</li>
-                      <li>Document checklist and organization support</li>
-                      <li>Assistance preparing application information</li>
-                      <li>Guidance on common delays and how to avoid them</li>
-                      <li>Follow-up coordination throughout the review process</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="concierge" role="tabpanel" aria-labelledby="concierge-tab">
-            <div class="row justify-content-center">
-              <div class="col-lg-10 col-xl-8">
-                <div class="card shadow-sm">
-                  <div class="card-body">
-                    <h2 class="card-title">Concierge Care Services</h2>
-                    <p class="card-text px-md-5">
-                      Our concierge care coordination service provides ongoing, hands-on support for families who need consistent assistance managing care.
-                    </p>
-                    <h4>This service is ideal for families who:</h4>
-                    <ul class="concierge-services-idea-for-list">
-                      <li>Live out of town</li>
-                      <li>Have demanding schedules</li>
-                      <li>Need ongoing coordination support</li>
-                    </ul>
-                    <h3>Services may include:</h3>
-                    <ul class="list-unstyled">
-                      <li>Appointment coordination and reminders</li>
-                      <li>Communication support with providers (as appropriate)</li>
-                      <li>Transportation coordination assistance</li>
-                      <li>Assistance organizing care plans and updates</li>
-                      <li>Ongoing check-ins and coordination</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="senior" role="tabpanel" aria-labelledby="senior-tab">
-            <div class="row justify-content-center">
-              <div class="col-lg-10 col-xl-8">
-                <div class="card shadow-sm">
-                  <div class="card-body">
-                    <h2 class="card-title">Senior Care Transitions & Placement Guidance</h2>
-                    <p class="card-text px-md-5">
-                      Choosing the appropriate level of care can feel overwhelming, especially under time pressure.
-                      We help families understand their options and coordinate next steps.
-                    </p>
-                    <h3>Support may include:</h3>
-                    <ul class="list-unstyled">
-                      <li>Discharge planning guidance</li>
-                      <li>Assisted living and care option exploration</li>
-                      <li>Coordination of placement transitions</li>
-                      <li>Communication support with facilities</li>
-                      <li>Guidance through decision-making process</li>
-                    </ul>
-                  </div>
-                </div>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="medicare" role="tabpanel" aria-labelledby="medicare-tab">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-8">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h2 class="card-title">Medicare Benefit Navigation</h2>
+                <p class="card-text px-md-5">
+                  Understanding Medicare coverage during transitions of care can be challenging, especially when determining what services are available after hospitalization or rehabilitation.
+                </p>
+                <h5>
+                  We help families better understand how Medicare applies to their situation so they can make informed decisions.
+                </h5>
+                <h3>Services may include:</h3>
+                <ul class="list-unstyled">
+                  <li>Explanation of Medicare-covered services</li>
+                  <li>Guidance on skilled nursing and rehabilitation coverage</li>
+                  <li>Understanding home health eligibility</li>
+                  <li>Clarification of timelines and limitations</li>
+                  <li>General education to help families make informed care decisions</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-        <!-- End Tab Content -->
       </div>
-      <!-- End Column -->
+
+      <div class="tab-pane fade" id="medicaid" role="tabpanel" aria-labelledby="medicaid-tab">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-8">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h2 class="card-title">Medicaid Long-Term Care Application Support</h2>
+                <p class="card-text px-md-5">
+                  Applying for Medicaid long-term care involves <strong>strict</strong> documentation requirements and eligibility guidelines. Many families feel overwhelmed by the process.
+                </p>
+                <h3>Support may include:</h3>
+                <ul class="list-unstyled">
+                  <li>Preliminary eligibility discussion</li>
+                  <li>Explanation of income and asset considerations</li>
+                  <li>Document checklist and organization support</li>
+                  <li>Assistance preparing application information</li>
+                  <li>Guidance on common delays and how to avoid them</li>
+                  <li>Follow-up coordination throughout the review process</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="concierge" role="tabpanel" aria-labelledby="concierge-tab">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-8">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h2 class="card-title ">Concierge Care Services</h2>
+                <p class="card-text px-md-5">
+                  Our concierge care coordination service provides ongoing, hands-on support for families who need consistent assistance managing care.
+                </p>
+                <!-- New Nested Row for the Two Cards -->
+                <div class="row g-4"> 
+                  
+                  <!-- Column 1: Ideal Families -->
+                  <div class="col-md-6">
+                    <div class="card h-100"> 
+                      <div class="card-body sub-card-body">
+                        <i class="bi bi-geo-alt-fill geo-icon"></i>
+                        <h4 class="sub-card-title">This service is ideal for families who:</h4>
+                        <ul class="list-unstyled mb-0">
+                          <li>Live out of town</li>
+                          <li>Have demanding schedules</li>
+                          <li>Need ongoing coordination support</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Column 2: Services Included -->
+                  <div class="col-md-6">
+                    <div class="card h-100">
+                      <div class="card-body sub-card-body">
+                        <i class="bi bi-clipboard2-heart-fill clipboard-icon"></i>
+                        <h4 class="sub-card-title">Services may include:</h4>
+                        <ul class="list-unstyled mb-0">
+                          <li>Appointment coordination</li>
+                          <li>Communication support</li>
+                          <li>Transportation assistance</li>
+                          <li>Organizing care plans</li>
+                          <li>Ongoing check-ins</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </div> <!-- End Nested Row -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="senior" role="tabpanel" aria-labelledby="senior-tab">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-8">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h2 class="card-title">Senior Care Transitions & Placement Guidance</h2>
+                <p class="card-text px-md-5">
+                  Choosing the appropriate level of care can feel overwhelming, especially under time pressure.
+                  We help families understand their options and coordinate next steps.
+                </p>
+                <h3>Support may include:</h3>
+                <ul class="list-unstyled">
+                  <li>Discharge planning guidance</li>
+                  <li>Assisted living and care option exploration</li>
+                  <li>Coordination of placement transitions</li>
+                  <li>Communication support with facilities</li>
+                  <li>Guidance through decision-making process</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- End Row -->
+        <!-- End Tab Content -->
   </div>
 
   <footer>
