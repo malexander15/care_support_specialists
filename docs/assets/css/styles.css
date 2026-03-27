@@ -10,16 +10,10 @@ html {
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  color: #1f2937;
   background-color: #f8fafc;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: #1f2937;
-}
 
 /* End HTML Defaults */
 
@@ -61,45 +55,35 @@ a {
   text-decoration: none;
 }
 
-/* section {
-  padding: 1rem 0;
-} */
-
 h1,
 h2,
 h3 {
-  line-height: 1.2;
+  color: #004aad;
   margin-bottom: 1rem;
-  color: #0f172a;
+  font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 564;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 140,
+    "GRAD" -50;
+    text-shadow: 1px 1px gray;
+}
+
+li {
+  font-family: "Noto Kufi Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 p {
   margin-bottom: 1rem;
   max-width: 65ch;
-}
-
-.hero {
-  background: linear-gradient(to bottom, #eff6ff, #ffffff);
-  background-image: url('../images/medicalStockSeries/1.png');
-  background-position: center;
-  background-size: cover;
-  margin-bottom: 2rem;
-}
-
-.hero h1 {
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  max-width: 14ch;
-  padding-top: 0.5rem;
-}
-.hero p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-  background:linear-gradient(338deg, rgba(31, 41, 55, 1) 0%, rgb(90 90 122) 100%);
-  border-radius: 0.5rem;
-  color: #ffffff;
-  padding: 1rem;
-  opacity: 0.9;
-  max-width: 58ch;
+  font-family: "Noto Kufi Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .card {
@@ -115,6 +99,7 @@ footer {
   padding: 3rem 0;
   margin-top: 3rem;
   border-top: #1f2937 solid 1px;
+  display: flex;
 }
 
 footer h3 {
@@ -136,7 +121,37 @@ footer a:hover {
 }
 
 /* Home Page Overrides */
+.hero {
+  background-image: url('../images/medicalStockSeries/1.png');
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 2rem;
+}
 
+.hero h1 {
+  max-width: 14ch;
+  line-height: 4rem;
+  color: #042047;
+  text-shadow: 1px 1px gray;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    line-height: 3rem;
+  }
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  background:linear-gradient(338deg, rgb(249, 252, 255) 0%, rgb(90 90 122) 100%);
+  opacity: 70%;
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
+  color: black;
+  padding: 1rem;
+  opacity: 0.9;
+  max-width: 78ch;
+}
 /* End Home Page Overrides */
 
 /* About Page Overrides */
@@ -145,10 +160,9 @@ footer a:hover {
   background-image: url('../images/medicalStockSeries/2.png');
   background-position: center;
   background-size: cover;
-  padding: 5rem 0;
+  padding: 2rem 0;
   display: grid;
   justify-content: center;
-  backdrop-filter: blur(20px);
   margin-bottom: 2rem;
 }
 
@@ -156,17 +170,79 @@ footer a:hover {
   margin-right: 1rem;
 }
 
-.banner h4 {
+.banner p {
   padding: 1rem;
   color: #000000;
   width: 55%;
+  text-shadow: 1px 1px 1px #6a7fac;
+  font-size: 18px;
+}
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeIn 1s both; 
 }
 
 /* End About Page overrides */
 
 /* Services Page Overrides */
-.services-banner {
-  margin-bottom: 2rem;
+.services-banner-container {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+/* 2. Mobile Default (Small & Slim) */
+.services-banner-container img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center; 
+  display: block;
+}
+
+/* 3. Tablet (Medium) */
+@media (min-width: 768px) {
+  .services-banner-container img {
+    height: 320px;    /* Slightly taller for tablets */
+  }
+}
+
+/* 4. Laptop/Desktop (Large) */
+@media (min-width: 1024px) {
+  .services-banner-container img {
+    height: 30rem;
+    object-position: center 70%;
+  }
+}
+
+.services-main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.services-main-header h1{
+  margin-bottom: 0;
+}
+
+.services-main-header img {
+  margin-left: 5rem;
+}
+
+@media (max-width: 768px){
+  .services-main-header img {
+    padding-top: 0.8rem;
+    margin-left: 0.5rem;
+  }
 }
 
 #myTab .nav-link{
@@ -185,8 +261,18 @@ footer a:hover {
 }
 
 .card-body h2, h3{
-  color: #0f172a;
-  text-decoration: underline;
+  color: #004aad
+}
+
+.speech-bubble {
+  background: #ecedee;
+  border-radius: 0.5rem;
+  padding: 20px;
+  margin: 20px;
+  font-weight: bold;
+  box-shadow: 2px 2px #636a78;
+  font-family: "Roboto Serif", serif;
+  font-size: 20px;
 }
 
 
@@ -197,7 +283,6 @@ footer a:hover {
 .card-text{
   max-width: none;
   line-height: 1.6rem;
-  font-weight: 600;
   margin-top: 1.2rem;
   
 }
@@ -205,6 +290,7 @@ footer a:hover {
 .sub-card-body {
   background-color: #e9eaeb;
   border-radius: 0.75rem;
+  font-family: "Roboto Serif", serif;
 }
 
 .geo-icon, .clipboard-icon {
