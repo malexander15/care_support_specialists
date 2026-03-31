@@ -280,12 +280,7 @@ footer a:hover {
   color: #ffffff;
   background-color: #0f172a;
 }
-
-.card-body ul{
-  list-style-type: none;
-  padding-left: 0;
-  font-weight: 600;
-}
+pricing-second-section-list
 
 .card-body h2, h3{
   color: #004aad
@@ -338,3 +333,22 @@ footer a:hover {
 }
 
 /* End Services Page Overrides */
+
+/* Pricing Page Overrides */
+
+.pricing-first-header-section {
+  background-color: #eef1f8;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.pricing-header-img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.pricing-second-section-list{
+  list-style-type: disc;
+}
+/* End Pricing Page Overrides */
